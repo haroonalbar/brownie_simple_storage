@@ -3,8 +3,11 @@ from brownie import accounts
 
 
 def deploy_simple_storage():
-    account = accounts[0]
-    print(account)
+    # account = accounts[0]
+    # print(account)
+
+    # to work with the the account you created
+    account = accounts.loadl("dog")
 
 
 def main():
