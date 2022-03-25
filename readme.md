@@ -21,3 +21,12 @@ contacts > SimpleStorage.sol
 
 create a script deploy.py
         brownie run filename *for running scripts*
+
+brownie set a local blockchain if dont define one
+and you can use accounts to get the address
+
+another way to add your accounts is through cmd.exe
+        brownie accounts new name
+                add metamask privatekey
+        brownie accounts list *to list accounts*
+        brownie accounts delete name*to delete accounts*
