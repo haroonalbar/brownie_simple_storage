@@ -35,3 +35,10 @@ another way to add your accounts is through cmd.exe
         this is one of best ways to store your keys
 
 create .env and export private for testing 
+
+to pull .env file directly from brownie
+        create a file brownie-config.yaml
+        brownie always looks for .yaml file to grab info about where 
+        you are going to buid/deploy/grabthings
+
+        

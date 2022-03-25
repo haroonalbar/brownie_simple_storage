@@ -1,13 +1,17 @@
 # import accounts to work with address and privatekey
 from brownie import accounts
 
+import os
+
 
 def deploy_simple_storage():
     # account = accounts[0]
     # print(account)
 
     # to work with the the account you created
-    account = accounts.load("dog")
+    # account = accounts.load("dog")
+    # print(account)
+    account = accounts.add(os.getenv("PRIVATE_KEY"))
     print(account)
 
 
