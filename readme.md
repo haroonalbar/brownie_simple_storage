@@ -28,5 +28,10 @@ and you can use accounts to get the address
 another way to add your accounts is through cmd.exe
         brownie accounts new name
                 add metamask privatekey
+                set password
         brownie accounts list *to list accounts*
         brownie accounts delete name*to delete accounts*
+
+        this is one of best ways to store your keys
+
+create .env and export private for testing 
