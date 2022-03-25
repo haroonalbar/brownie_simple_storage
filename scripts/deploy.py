@@ -6,7 +6,9 @@ from brownie import accounts, config, SimpleStorage
 def deploy_simple_storage():
     account = accounts[0]
     simple_storage = SimpleStorage.deploy({"from": account})
-    print(simple_storage)
+    stored_value = simple_storage.retrieve()
+    print(stored_value)
+    # print(simple_storage)
     # print(account)
 
     # to work with the the account you created
