@@ -15,5 +15,9 @@
         brownie
         brownie init => for creating new brownie project
         *didnt work because readme.md was there*delete readme after init create readme
-        
-        
+
+contacts > SimpleStorage.sol
+        brownie compile *for compiling the contract it .jason will be on build/contracts*
+
+create a script deploy.py
+        brownie run filename *for running scripts*
