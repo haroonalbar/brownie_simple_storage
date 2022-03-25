@@ -37,8 +37,10 @@ another way to add your accounts is through cmd.exe
 create .env and export private for testing 
 
 to pull .env file directly from brownie
-        create a file brownie-config.yaml
+        create a file *brownie-config.yaml*
         brownie always looks for .yaml file to grab info about where 
         you are going to buid/deploy/grabthings
+        dotenv: .env ////grabbing .env file
+        wallets:
+                from_key: ${PRIVATE_KEY} ////here ${} will add it into environment variable no need to import os
 
-        
