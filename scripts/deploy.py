@@ -8,6 +8,7 @@ def deploy_simple_storage():
 
     # to work with the the account you created
     account = accounts.loadl("dog")
+    print(account)
 
 
 def main():
