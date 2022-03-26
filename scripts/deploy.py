@@ -1,10 +1,18 @@
 # import accounts to work with address and privatekey
 # import SimpleStorage contract
-from brownie import accounts, config, SimpleStorage
+# import network to work with diffrent networks
+from brownie import accounts, config, SimpleStorage, network
+
+
+def get_account():
+    if network.show_active() == "development":
+        return accounts[0]
+    else:
+        return accounts.add(config["wallet"]["from_key"])
 
 
 def deploy_simple_storage():
-    account = accounts[0]
+    account = get_account()
     # in brownie in transcation we have to specify the account we are transactining from
     simple_storage = SimpleStorage.deploy({"from": account})
     stored_value = simple_storage.retrieve()

@@ -46,3 +46,14 @@ to pull .env file directly from brownie
 
 create test_simple_storage.py in test folder for automating tests
         brownie test *to test it*
+        brownie test -k functionname *to test just one function*
+        brownie test --pdb *if there is error we will be put into a python shell to find out whats wrong*
+        brownie test -s *to print the lines of test*
+        brownie networks list *for listing the networks*
+                look at pytest doc for more brownie test stuff
+
+connecting to a test net
+        goto *infura* and copy *project id* from project settings
+        export a new variable in .env for project id
+        
+        brownie run deploy.py --network rinkeby to run in rinkeby network through infura
