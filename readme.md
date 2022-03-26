@@ -44,3 +44,4 @@ to pull .env file directly from brownie
         wallets:
                 from_key: ${PRIVATE_KEY} ////here ${} will add it into environment variable no need to import os
 
+create test_simple_storage.py in test folder for automating tests
