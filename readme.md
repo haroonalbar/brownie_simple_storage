@@ -60,3 +60,31 @@ connecting to a test net
 
 create a new file read_value.py in scripts
         brownie run read_value.py --network rinkeby
+
+we write scripts to do somting over and over again
+we can use **brownie console** to do somting ad hoc (to do somthing special or immidiate)
+and get into a shell where we can actually work with these contracts
+        brownie console *it will have everything imported in it*
+
+                SimpleStorage ([]   will get an array as result / there is no simpleStorage contract yet)
+                        
+                        //there is no contracts deployed because we are in a new local chain so we can do
+
+                account = accounts[0]
+                account *now we have an account to work with
+
+                        \\everything in the script is imported to the console so we can copy any line of code from the script
+                        \\and paste it to the console it will run just as we run in the script
+                        \\So we can deploy the SimpleStorage contract just by pasting the code for deployment in the console
+                        remove spaces to avoid errors
+
+                SimpleStorage //we will see a contract 
+                len(SimpleStorage) //will be 1
+                SimpleStorage //deployed again
+                len(SimpleStorage) //2
+                         we can everything in python as well like
+                print("Hello!")
+                a = 1+1
+                a //2
+
+        console is a great way to intract with the contract
