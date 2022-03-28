@@ -57,3 +57,6 @@ connecting to a test net
         export a new variable in .env for project id
         
         brownie run deploy.py --network rinkeby to run in rinkeby network through infura
+
+create a new file read_value.py in scripts
+        brownie run read_value.py --network rinkeby
